@@ -1,0 +1,16 @@
+{
+    "name": "Butano Development Environment",
+    "image": "devkitpro/devkitarm:latest", // Use the specific tag you need
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "softpack6ix.nds-emulator-vscode",
+                "ms-vscode.cpptools"
+            ]
+        }
+    },
+    "postCreateCommand": "echo 'Dev container is ready!'"
+}
